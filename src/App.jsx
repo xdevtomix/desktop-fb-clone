@@ -1,9 +1,9 @@
-export default function App() {
+import Navigation from "./components/Navigation";
 
+export default function App() {
   return (
     <div data-component="app">
-      app
-      <i class='bx bx-user'></i>
+      <Navigation />
     </div>
   )
 }
