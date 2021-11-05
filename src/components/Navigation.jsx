@@ -32,15 +32,19 @@ const Container = styled.nav`
     align-items: center;
     justify-content: space-between;
     background-color: #1876f2;
-    padding: 5px 5%;
+    padding: 0.5rem 2rem;
 `;
 
 const Left = styled.div`
-
+    display: flex;
+    align-items: center;
 `;
 
 const Logo = styled.div`
     color: white;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
 `;
 
 const List = styled.ul`
@@ -48,11 +52,15 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-
+    list-style: none;
+    display: inline-block;
 `;
 
 const Icon = styled.i`
     color: white;
+    font-size: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
 `;
 
 const Right = styled.div`
