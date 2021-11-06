@@ -77,6 +77,7 @@ const EventsSeeAll = styled.span`
     text-decoration: none;
     color: #1876f2;
     font-size: 0.75rem;
+    cursor: pointer;
 `;
 
 const EventsBody = styled.div``;
@@ -170,4 +171,5 @@ const AdsClose = styled.span`
     text-decoration: none;
     color: #1876f2;
     font-size: 0.75rem;
+    cursor: pointer;
 `;
