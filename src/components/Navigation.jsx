@@ -41,6 +41,9 @@ const Container = styled.nav`
     justify-content: space-between;
     background-color: #1876f2;
     padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 `;
 
 const Left = styled.div`
