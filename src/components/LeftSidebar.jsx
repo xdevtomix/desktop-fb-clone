@@ -72,6 +72,7 @@ const Link = styled.a`
     margin-bottom: 1.5rem;
     color: #626262;
     width: fit-content;
+    cursor: pointer;
 `;
 
 const Icon = styled.i`

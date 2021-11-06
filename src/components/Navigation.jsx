@@ -56,11 +56,10 @@ const Logo = styled.div`
     margin-right: 3rem;
     font-size: 1.5rem;
     cursor: pointer;
+    letter-spacing: 4px;
 `;
 
-const List = styled.ul`
-
-`;
+const List = styled.ul``;
 
 const Item = styled.li`
     list-style: none;
