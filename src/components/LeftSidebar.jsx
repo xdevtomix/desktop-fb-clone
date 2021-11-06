@@ -73,6 +73,11 @@ const Link = styled.a`
     color: #626262;
     width: fit-content;
     cursor: pointer;
+    transition: transform 200ms;
+
+    :hover {
+        transform: scale(1.1);
+    }
 `;
 
 const Icon = styled.i`
