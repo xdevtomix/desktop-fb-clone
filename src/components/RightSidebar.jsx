@@ -35,6 +35,15 @@ export default function RightSidebar() {
                 </EventsBody>
             </EventsContainer>
 
+            <AdsContainer>
+                <AdsHeader>
+                    <AdsTitle>Advertisment</AdsTitle>
+                    <AdsClose>Close</AdsClose>
+                </AdsHeader>
+
+                <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="woman" />
+            </AdsContainer>
+
         </Container>
     );
 }
@@ -60,7 +69,7 @@ const EventsHeader = styled.div`
 `;
 
 const EventsTitle = styled.h4`
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 600;
 `;
 
@@ -134,4 +143,31 @@ const EventRightColumn = styled.div`
         color: #1876f2;
         cursor: pointer;
     }
+`;
+
+const AdsContainer = styled.div`
+    img {
+        width: 100%;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 0.25rem;
+    }
+`;
+
+const AdsHeader = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+`;
+
+const AdsTitle = styled.h4`
+    font-size: 0.75rem;
+    font-weight: 600;
+`;
+
+const AdsClose = styled.span`
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 0.75rem;
 `;
