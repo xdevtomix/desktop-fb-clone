@@ -44,6 +44,36 @@ export default function RightSidebar() {
                 <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="woman" />
             </AdsContainer>
 
+            <ChatsContainer>
+                <ChatsHeader>
+                    <ChatsTitle>Friends online</ChatsTitle>
+                    <ChatsClose>Hide chats</ChatsClose>
+                </ChatsHeader>
+                <ChatsBody>
+                    <Chat>
+                        <ChatImageContainer>
+                            <img src="https://images.pexels.com/photos/1903611/pexels-photo-1903611.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="woman"></img>
+                            <div></div>
+                        </ChatImageContainer>
+                        <p>Mary Smith</p>
+                    </Chat>
+                    <Chat>
+                        <ChatImageContainer>
+                            <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="woman"></img>
+                            <div></div>
+                        </ChatImageContainer>
+                        <p>Irene Adler</p>
+                    </Chat>
+                    <Chat>
+                        <ChatImageContainer>
+                            <img src="https://images.pexels.com/photos/3541388/pexels-photo-3541388.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="woman"></img>
+                            <div></div>
+                        </ChatImageContainer>
+                        <p>Greta Garbo</p>
+                    </Chat>
+                </ChatsBody>
+            </ChatsContainer>
+
         </Container>
     );
 }
@@ -172,4 +202,61 @@ const AdsClose = styled.span`
     color: #1876f2;
     font-size: 0.75rem;
     cursor: pointer;
+`;
+
+const ChatsContainer = styled.div`
+`;
+
+const ChatsHeader = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+`;
+
+const ChatsTitle = styled.h4`
+    font-size: 0.75rem;
+    font-weight: 600;
+`;
+
+const ChatsClose = styled.span`
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 0.75rem;
+    cursor: pointer;
+`;
+
+const ChatsBody = styled.div``;
+
+const Chat = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+
+    img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+`;
+
+const ChatImageContainer = styled.div`
+    position: relative;
+    margin-right: 1rem;
+
+    div {
+        position: absolute;
+        right: 0;
+        bottom: 0.25rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        border: 1px solid #efefef;
+        background-color: green;
+    }
 `;
