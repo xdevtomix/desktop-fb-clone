@@ -27,5 +27,5 @@ const Container = styled.div`
 const Main = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
 `;
