@@ -3,6 +3,7 @@ import styled from "styled-components";
 export default function LeftSidebar() {
     return (
         <Container data-component="left-sidebar">
+
             <LinksContainer>
                 <Link>
                     <Icon className="bx bx-news"></Icon>
@@ -25,9 +26,30 @@ export default function LeftSidebar() {
                     <Text>Watch</Text>
                 </Link>
                 <Link>
-                    <Text style={{color: '#1876f2'}}>See more</Text>
+                    <Text style={{ color: '#1876f2' }}>See more</Text>
                 </Link>
             </LinksContainer>
+
+            <ShortcutsContainer>
+                <ShortcutsTitle>Your shortcuts</ShortcutsTitle>
+                <Link>
+                    <ShortcutsImage src="https://images.pexels.com/photos/1903611/pexels-photo-1903611.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="image"></ShortcutsImage>
+                    <Text>Web developers</Text>
+                </Link>
+                <Link>
+                    <ShortcutsImage src="https://images.pexels.com/photos/3225889/pexels-photo-3225889.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="image"></ShortcutsImage>
+                    <Text>Frontend courses</Text>
+                </Link>
+                <Link>
+                    <ShortcutsImage src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="image"></ShortcutsImage>
+                    <Text>Useful videos</Text>
+                </Link>
+                <Link>
+                    <ShortcutsImage src="https://images.pexels.com/photos/3541388/pexels-photo-3541388.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="image"></ShortcutsImage>
+                    <Text>PWA links</Text>
+                </Link>
+            </ShortcutsContainer>
+
         </Container>
     );
 }
@@ -58,6 +80,20 @@ const Icon = styled.i`
     color: #1876f2;
 `;
 
-const Text = styled.span`
+const Text = styled.span``;
 
+const ShortcutsContainer = styled.div``;
+
+const ShortcutsTitle = styled.p`
+    margin: 1.5rem 0;
+    color: #626262;
+    font-weight: 500;
+`;
+
+const ShortcutsImage = styled.img`
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
 `;
