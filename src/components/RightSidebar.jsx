@@ -79,7 +79,7 @@ export default function RightSidebar() {
 }
 
 const Container = styled.div`
-    flex-basis: 25%;
+    width: 25%;
     position: sticky;
     align-self: flex-start;
     top: 4rem;

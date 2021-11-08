@@ -11,5 +11,5 @@ export default function Feed() {
 }
 
 const Container = styled.div`
-    flex-basis: 45%;
+    width: 50%;
 `;
