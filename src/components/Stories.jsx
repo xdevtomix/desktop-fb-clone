@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default function Stories() {
     return (
-        <Container>
+        <Container data-component="stories">
             <Story bUrl="https://images.pexels.com/photos/146083/pexels-photo-146083.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                 <i className='bx bx-plus-circle'></i>
                 <div>Add story</div>
